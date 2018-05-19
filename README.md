@@ -2,12 +2,13 @@
 
 ## About the Project
 
-This project is for implementing Shape reconstruction program via level set method. It is based on a paper written by H. Zhao(2000).
+This project is for implementing shape reconstruction program via level set method. It is based on a paper written by H. Zhao(2000).
 
 ## Algorithm
-Goal: Shape Reconstruction form an unorganized data set.
 
-key Idea: Want to find a function on an image whose zero level set is nearly the same as what we want to reconstruct.
+**Goal**: Shape Reconstruction from an unorganized data set.
+
+**key Idea**: Want to find a function on an image whose zero level set is nearly the same as what we want to reconstruct.
 
 To do this, we define a functional that measures how well a function reconstruct a shape. Let ![equation](https://latex.codecogs.com/gif.latex?$S$) be an unorganized data set and ![equation](https://latex.codecogs.com/gif.latex?$\Gamma$) be a zero level set of a function. Given a point ![equation](https://latex.codecogs.com/gif.latex?$x$) on ![equation](https://latex.codecogs.com/gif.latex?$\Gamma$),  define ![equation](https://latex.codecogs.com/gif.latex?$d(x)&space;=&space;dist(x,&space;S)$) and ![equation](https://latex.codecogs.com/gif.latex?$E(\Gamma)=\big[&space;\int_{\Gamma}d^p(x)ds&space;\big]^{1/p}$). Then ![equation](https://latex.codecogs.com/gif.latex?$E$) is non-negative and if ![equation](https://latex.codecogs.com/gif.latex?$\Gamma$) is close to ![equation](https://latex.codecogs.com/gif.latex?$S$), ![equation](https://latex.codecogs.com/gif.latex?$E$) is close to 0. It means that ![equation](https://latex.codecogs.com/gif.latex?$E$) is an appropriate functional for shape reconstruction.
 
